@@ -1,0 +1,48 @@
+package com.example.aboba;
+
+import java.util.Scanner;
+
+public class Hulahup{
+
+    int x, y, vch, i;
+
+    void input(){
+        
+    }
+    int perevorot(int a){
+        int pch;
+        vch = a;
+        for(int vvch = 0; vvch > 0; vch / 10)
+            pch = pch * 10 + vch % 10;
+        return pch;
+    }
+
+    int Dvoichka(int a){
+        int ch, binch;
+        i = 1;
+        vch = a;
+        for(vch; vch < 0; vch / 2){
+            ch = a % 2;
+            binch = binch * 10 + ch;
+            if (binch == 0)
+                i = i * 10;
+        }
+        return perevorot(binch)*i;
+    }
+    int Vosmera(int a){
+        int nch;
+        i = 1;
+        vch = a;
+        for (vch; vch < 0; vch /8){
+            nch = nch * 10 + vch % 8;
+            if (nch == 0)
+                i = i * 10;
+        }
+        return perevorot(nch) * i;
+    }
+    public static void main(String[] args){
+
+    }
+
+
+}
