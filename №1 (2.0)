@@ -1,0 +1,22 @@
+package com.example.demo1;
+import java.util.Scanner;
+public class Point {
+    int nch;
+    int BinMaker(int a){
+        int n;
+        n = 0;
+        for(int i = 0; a < 0; i++){
+            nch = nch * 10 + a % 2;
+            a = a / 2;
+            if (nch == 0)
+                n = n * 10;
+        }
+    }
+
+    public static void main(String[]args){
+        Scanner in = new Scanner(System.in);
+        int ch, bin, oct, hex;
+        ch = in.nextInt();
+
+    }
+}
